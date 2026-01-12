@@ -14,6 +14,22 @@
   opacity: 0.4;
 }
 
+table {
+  display: table; // or use flex/grid for alternative layouts
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+  font-size: 1em; // Adjust for readability as needed
+  overflow-x: auto;
+}
+
+th, td {
+  padding: 0.5em;
+  text-align: left; // or center, depending on your needs
+  border: 1px solid #ddd; // Ensure consistency here
+  vertical-align: middle;
+}
+
 // Fix colour in navigation/masthead
 .greedy-nav a:visited {
   color: inherit;
@@ -82,7 +98,6 @@ a {
   (info, $info-color),
   (facebook, $facebook-color),
   (twitter, $twitter-color),
-  (google-plus, $google-plus-color),
   (linkedin, $linkedin-color);
 
   @each $buttoncolor, $color in $buttoncolors {

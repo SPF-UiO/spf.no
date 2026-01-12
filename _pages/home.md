@@ -4,7 +4,7 @@ permalink: /
 excerpt: |
   Vi er arbeidsgiveren for frivillige ved studentkjellerne tilknyttet Universitet i Oslo,
   og håndterer lønn, forsikringer og fakturering av personalkostnader på vegne av våre 
-  medlemmer.
+  medlemsforeninger.
   
 layout: splash
 header:
@@ -95,7 +95,7 @@ konserter, julebord, og mer.
     </tr>
   </thead>
   <tbody>
-  {% assign pubs = site.data.members | where:"type", "pub" | sort: "name" %}
+  {% assign pubs = site.data.members | where:"type", "pub" | sort: "org" %}
   {% for member in pubs %}
   <tr>
     <td><a href="{{ member.url }}" rel="external">{{ member.org }}</a></td>
@@ -129,7 +129,7 @@ konserter, julebord, og mer.
     </tr>
   </thead>
   <tbody>
-  {% assign rentals = site.data.members | where:"type", "rental" | sort: "name" %}
+  {% assign rentals = site.data.members | where:"type", "rental" | sort: "org" %}
   {% for member in rentals %}
   <tr>
     <td><strong><a href="{{ member.url }}" rel="external">{{ member.org }}</a></strong></td>
@@ -142,4 +142,4 @@ konserter, julebord, og mer.
 </tbody>
 </table>
 
-[epost]: mailto:&#115;&#112;&#102;&#045;&#115;&#116;&#121;&#114;&#101;&#116;&#064;&#115;&#116;&#117;&#100;&#111;&#114;&#103;&#046;&#117;&#105;&#111;&#046;&#110;&#111;
+[epost]: mailto:spf-styret@studorg.uio.no
